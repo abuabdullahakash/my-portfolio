@@ -1,0 +1,812 @@
+/* সব margin/padding reset করে নিচ্ছি এবং box-sizing ঠিক করছি */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* বডি এর ফন্ট সেট করছি */
+body {
+  font-family: 'Segoe UI', sans-serif; /* মসৃণ ও আধুনিক ফন্ট */
+  background-color: #FFF6EF;           /* প্যালেট অনুযায়ী হালকা ক্রিম ব্যাকগ্রাউন্ড */
+  color: #333;                         /* ডার্ক গ্রে টেক্সট — চোখের জন্য আরামদায়ক */
+  line-height: 1.6;                    /* টেক্সটের মধ্যে পর্যাপ্ত ফাঁকা */
+  padding: 0;
+  margin: 0;
+}
+
+/* Header এর ডিজাইন */
+#header {
+  /* ব্যাকগ্রাউন্ডে একটি নির্দিষ্ট রঙ (solid orange-red) */
+  background-color: #DE7006; /* প্যালেট থেকে নেওয়া */
+
+  /* ভিতরের স্পেস */
+  padding: 20px 40px;
+
+  /* flex layout: logo আর menu এক লাইনে রাখতে */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* নিচে ছায়া যেন হেডারটা ভেসে থাকে */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+  /* স্ক্রল করলে হেডারটা উপরে আটকে থাকে */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+/* ============================
+   🔶 Logo Text Styling
+   ============================ */
+   /* 🔶 Logo wrapper */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* 🔗 Text link (no underline, color from children span) */
+.site-title {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* 🔵 First part (white color) */
+.site-title .first {
+  color: #ffffff;
+}
+
+/* 🟠 Last part (accent color from your palette) */
+.site-title .last {
+  color: #000;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* subtle shadow */
+}
+
+
+/* ✨ Optional hover effect (slight tone shift) */
+.site-title:hover .last {
+  color: #FFD8A6; /* হালকা creamy tone on hover */
+}
+
+
+/* Navigation menu design */
+.nav-menu a {
+  margin-left: 20px; /* link গুলোর মাঝে ফাঁকা */
+  text-decoration: none; /* underline বাদ */
+  color: white;
+  font-weight: 500;
+  padding: 6px 12px; /* ভিতরের padding */
+  transition: 0.3s; /* smooth hover effect */
+  border-radius: 5px;
+}
+
+/* Hover effect: header রঙের সাথে মানানসই হালকা কমলা ব্যাকগ্রাউন্ড */
+.nav-menu a:hover {
+  background-color: #F27905; /* slightly brighter orange */
+  color: #fff; /* টেক্সট সাদা থাকবে */
+}
+
+/* Hover effect: mouse নিলে background হালকা সাদা হবে */
+.nav-menu a:hover {
+  background-color: #F27905; /* header রঙের একটু হালকা version */
+  color: #fff;               /* টেক্সট সাদা রাখছি যেন পড়তে সুবিধা হয় */
+}
+
+/* Home section layout */
+#home {
+  padding: 60px 40px;
+  background-color: #FFF6EF; /* হালকা প্যালেট ব্যাকগ্রাউন্ড */
+}
+
+/* flex layout */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Text part styling */
+.home-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 30px;
+}
+
+.home-text h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.home-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* highlight color */
+.highlight {
+  color: #F33F18; /* প্যালেট অনুযায়ী গুরুত্বপূর্ণ অংশ হাইলাইট */
+  font-weight: bold;
+}
+
+/* Button style */
+.btn-primary {
+  background-color: #DE7006;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #F27905;
+}
+
+/* Image styling */
+.home-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.home-image img {
+  width: 250px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Testimonial Section */
+#testimonial {
+  padding: 60px 40px;
+  background-color: #FFF6EF;
+}
+
+.testimonial-container .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #DE7006;
+  margin-bottom: 10px;
+}
+
+.testimonial-container .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Testimonial Card Styling */
+.testimonial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.client-img {
+  width: 100px; /* 🖼️ Image size */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 1.2rem;
+  color: #F33F18;
+  margin-bottom: 5px;
+}
+
+.client-role {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.feedback {
+  font-size: 1rem;
+  color: #444;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Swiper control styling */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #DE7006;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #F33F18;
+}
+
+
+/* About Section Styling */
+#about {
+  padding: 60px 40px;
+  background-color: #FFFBF5; /* হালকা ব্যাকগ্রাউন্ড */
+}
+
+/* Container Flex Layout */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* About Text Part */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  margin-right: 30px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #DE7006; /* প্যালেটের কমলা টাইটেল কালার */
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Download CV Button */
+.btn-secondary {
+  display: inline-block;
+  background-color: #F33F18; /* গাঢ় কমলা (Call to Action) */
+  color: #fff;
+  padding: 10px 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.3s;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: #DE7006; /* হোভার ইফেক্টের জন্য হালকা কমলা */
+}
+
+/* About Image Part */
+.about-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill Section মূল কন্টেইনার */
+#skill {
+  padding: 60px 40px;
+  background-color: #FFF6EF;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  color: #DE7006;
+  margin-bottom: 10px;
+}
+
+/* Subtitle নিচে */
+.section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* তিনটা skill-box এক লাইনে দেখানোর flex container */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* প্রতিটি skill category box */
+.skill-box {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Skill category heading */
+.skill-box h3 {
+  color: #F33F18;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+/* প্রতিটি স্কিল row */
+.skill {
+  margin-bottom: 15px;
+}
+
+/* স্কিলের নাম */
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+  font-weight: 500;
+}
+
+/* প্রোগ্রেস বার ব্যাকগ্রাউন্ড */
+.progress-bar {
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* প্রোগ্রেস চলমান রঙ */
+.progress {
+  height: 100%;
+  background-color: #DE7006;
+  border-radius: 6px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Section container */
+#portfolio {
+  padding: 60px 40px;
+  background-color: #FFFBF5;
+}
+
+/* Title & Subtitle */
+.portfolio-container .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #DE7006;
+  margin-bottom: 10px;
+}
+
+.portfolio-container .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Each Project Card */
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect: card বড় হয় */
+.portfolio-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Project Image */
+.project-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* ছবিটাকে ঠিক মতো crop করে দেখায় */
+}
+
+/* Text + Button Part */
+.card-content {
+  padding: 20px;
+}
+
+.card-content h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.tags {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* View Button */
+.btn-view {
+  display: inline-block;
+  background-color: #F33F18;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.btn-view:hover {
+  background-color: #DE7006;
+}
+
+/* Service Section */
+#service {
+  padding: 60px 40px;
+  background-color: #FFFBF5;
+}
+
+.service-container .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #DE7006;
+  margin-bottom: 10px;
+}
+
+.service-container .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Grid Layout */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Each Service Box */
+.service-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+}
+
+/* Font Awesome Icon */
+.service-icon {
+  font-size: 40px;
+  color: #F33F18;
+  margin-bottom: 15px;
+}
+
+.service-box h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-box p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 40px;
+  background-color: #FFF6EF;
+}
+
+.contact-container .section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #DE7006;
+  margin-bottom: 10px;
+}
+
+.contact-container .section-subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+/* Layout: Info + Form */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+/* Contact Info (left) */
+.contact-info {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-item i {
+  color: #F33F18;
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+/* Contact Form (right) */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: #DE7006;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #F33F18;
+}
+
+/* Footer Section */
+#footer {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 60px 40px 30px;
+  font-size: 0.95rem;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-col h2,
+.footer-col h3 {
+  color: #F29D01;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: #ccc;
+}
+
+.footer-col ul li i {
+  margin-right: 10px;
+  color: #F27905;
+}
+
+.footer-col a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col a:hover {
+  color: #F33F18;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #F27905;
+}
+
+/* Copyright Line */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* add korci humber thik korte */
+
+/* Default: hide hamburger on desktop */
+.hamburger {
+  display: none;
+}
+
+/* Mobile: show hamburger */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+
+/* ==========================
+   ✅ Responsive Design Start
+   ========================== */
+
+   @media (max-width: 1024px) {
+    /* 🔶 Tablet Layout Fixes */
+    .nav-menu a {
+      margin-left: 12px;
+      font-size: 0.95rem;
+    }
+  
+    .section-title {
+      font-size: 1.6rem;
+    }
+  
+    .section-subtitle {
+      font-size: 0.95rem;
+    }
+  
+    .service-grid,
+    .contact-content,
+    .footer-container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* 🔶 Mobile Layout Fixes */
+  
+    /* Header Responsive */
+    #header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    /* 🔄 Smooth Dropdown Animation Styles */
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: #F27905;
+  width: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+
+  /* 🔽 Animation Setup */
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: all 0.4s ease;
+}
+
+/* ✅ Show menu with animation */
+.nav-menu.show {
+  opacity: 1;
+  max-height: 500px;
+  transform: translateY(0);
+}
+
+    
+    .nav-menu a {
+      margin: 10px 0;
+      font-size: 1rem;
+      color: white;
+    }
+  
+    /* Hamburger Icon Styling */
+    .hamburger {
+      display: block;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+  
+    /* Contact + Footer Column Stack */
+    .contact-content,
+    .footer-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-col {
+      text-align: center;
+    }
+  
+    /* Testimonial Adjust */
+    .testimonial-card {
+      padding: 20px 15px;
+    }
+  
+    /* Contact Form Inputs */
+    .contact-form input,
+    .contact-form textarea {
+      font-size: 0.95rem;
+    }
+  
+    .section-title {
+      font-size: 1.4rem;
+    }
+  
+    .section-subtitle {
+      font-size: 0.9rem;
+    }
+  
+    /* Image/logo shrink if needed */
+    .logo-image {
+      width: 40px;
+    }
+  }
+  
+  /* ========================
+     ✅ Responsive Design End
+     ======================== */
+  

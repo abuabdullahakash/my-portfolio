@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Abu Abdullah Akash - Portfolio</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSS যুক্ত করতে পারো -->
+<!-- Head সেকশনের মধ্যে এটা যোগ করো -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <!-- Header Section -->
+  <section id="header">
+
+      <!--logo edit-->
+
+      <div class="logo">
+        <a href="#home" class="site-title">
+          <span class="first">Abu Abdullah</span> <span class="last">Akash</span>
+        </a>
+      </div>
+      
+    
+
+      <!--humburger icon-->
+      <!-- Header এর ভিতর logo & nav এর সাথে -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
+
+
+    <div class="nav-menu">
+      <a href="#home">Home</a>
+      <a href="#about">About</a> <!-- এখানে তোমার ভুল ছিল (href="about") -->
+      <a href="#skill">Skill</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+      <a href="#service">Service</a>
+    </div>
+  </section>
+
+<!-- Home Section শুরু -->
+<section id="home">
+  <div class="home-container">
+
+    <!-- Text Content -->
+    <div class="home-text">
+      <h1>
+        হ্যালো, আমি আবু আবদুল্লাহ আকাশ —
+        একজন দক্ষ <span class="highlight">ওয়েব ডিজাইনার</span> এবং
+        <span class="highlight">ওয়েব ডেভেলপার</span>, আধুনিক ও রেসপন্সিভ ওয়েবসাইট তৈরি করি।
+      </h1>
+      <p>আমি ক্লিন, মডার্ন এবং ইউজার-ফ্রেন্ডলি ডিজাইন বানাতে ভালোবাসি।</p>
+
+      <!-- CTA Button -->
+      <a href="#contact" class="btn-primary">যোগাযোগ করুন</a>
+    </div>
+
+    <!-- Profile Image -->
+    <div class="home-image">
+      <img src="imgs/profile.jpeg" alt="Akash Profile Picture"> <!-- এখানে তোমার ছবি দিবে -->
+      <!-- 🔶 এখানে তোমার নিজের ছবি দিবে: 
+           উদাহরণ: src="images/akash.jpg" -->
+    </div>
+
+  </div>
+</section>
+<!-- Home Section শেষ -->
+
+<!-- Testimonial Section শুরু -->
+<section id="testimonial">
+  <div class="testimonial-container">
+    <h2 class="section-title">ক্লায়েন্ট রিভিউ</h2>
+    <p class="section-subtitle">আমার কাজ নিয়ে ক্লায়েন্টদের মতামত</p>
+
+    <!-- Swiper Container -->
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper">
+
+        <!-- Testimonial Slide 1 -->
+        <div class="swiper-slide testimonial-card">
+          <!-- 🖼️ Image size: 100x100px (square) -->
+          <img src="imgs/testimonial men.jpeg" alt="Client 1" class="client-img">
+          <!-- 🔶 এখানে ক্লায়েন্টের প্রফাইল ছবি দিবে -->
+          <h3>রুবেল হোসেন</h3>
+          <p class="client-role">Founder, TechZone</p>
+          <p class="feedback">"আকাশ আমার জন্য একটি এক্সিলেন্ট ওয়েবসাইট তৈরি করেছে। তার রেসপন্সিভ ডিজাইন এবং কোডিং মান
+            এক কথায় অসাধারণ!"</p>
+        </div>
+
+        <!-- Testimonial Slide 2 -->
+        <div class="swiper-slide testimonial-card">
+          <img src="imgs/testimonial women.jpeg" alt="Client 2" class="client-img">
+          <h3>সাবরিনা হক</h3>
+          <p class="client-role">CEO, FemWeb</p>
+          <p class="feedback">"সে সময়মতো ডেলিভারি দিয়েছে এবং কমিউনিকেশন খুব ভালো ছিল। আমি আবারো কাজ করতে চাই তার সাথে।
+            Highly recommended!"</p>
+        </div>
+
+        <!-- চাইলে আরো testimonial card add করা যাবে -->
+
+      </div>
+
+      <!-- Swiper navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section শুরু -->
+<section id="about">
+  <div class="about-container">
+
+    <!-- About Text -->
+    <div class="about-text">
+      <h2>আমার সম্পর্কে</h2>
+      <p>
+        আমি আবু আবদুল্লাহ আকাশ — একজন দক্ষ ওয়েব ডিজাইনার এবং ডেভেলপার। ক্লিন, রেসপন্সিভ এবং ইউজার-ফোকাসড ওয়েবসাইট তৈরি
+        করা আমার প্যাশন। আমি HTML, CSS, JavaScript এবং WordPress-এ কাজ করে থাকি।
+      </p>
+      <p>
+        প্রতিটি প্রজেক্টে আমি চেষ্টা করি ক্রিয়েটিভ ডিজাইন, SEO ফ্রেন্ডলি স্ট্রাকচার এবং মোবাইল রেসপন্সিভতা নিশ্চিত করতে।
+      </p>
+
+      <!-- Download CV Button -->
+      <a href="imgs/cv.pdf" class="btn-secondary" download>📄 ডাউনলোড সিভি</a> <!-- এখানে PDF CV লিংক দেবে -->
+    </div>
+
+    <!-- About Image -->
+    <div class="about-image">
+      <img src="imgs/about section img.jpeg" alt="About Akash Image">
+      <!-- 🔶 এখানে তোমার নিজের বা কাজের সময়ের একটি প্রফেশনাল ছবি বসাবে -->
+    </div>
+
+  </div>
+</section>
+
+<!-- Skill Section শুরু -->
+<section id="skill">
+  <div class="skill-container">
+
+    <!-- Section Title -->
+    <h2 class="section-title">আমার স্কিলসমূহ</h2>
+    <p class="section-subtitle">আমি বিভিন্ন প্রযুক্তি ও টুল ব্যবহার করে প্রফেশনাল মানের ওয়েবসাইট তৈরি করি।</p>
+
+    <div class="skills-grid">
+
+      <!-- 🧠 Frontend Skills -->
+      <div class="skill-box">
+        <h3><i class="fas fa-code"></i> Frontend Development</h3>
+
+        <!-- প্রতিটি স্কিলে নাম + progress bar -->
+        <div class="skill">
+          <span>HTML</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Responsive Design</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ⚙️ Tools & Platforms -->
+      <div class="skill-box">
+        <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+
+        <div class="skill">
+          <span>WordPress</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Elementor</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Git & GitHub</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Adobe XD / Figma</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🤖 AI Skill Section -->
+      <div class="skill-box">
+        <h3><i class="fas fa-robot"></i> AI & Automation</h3>
+
+        <div class="skill">
+          <span>Prompt Engineering</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>ChatGPT for Web Development</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 95%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>AI Tools Integration (Zapier, Notion AI, etc.)</span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section শুরু -->
+<section id="portfolio">
+  <div class="portfolio-container">
+
+    <!-- Section Title -->
+    <h2 class="section-title">আমার প্রজেক্টসমূহ</h2>
+    <p class="section-subtitle">নিচে কিছু নির্বাচিত কাজের নমুনা দেওয়া হলো, যা আমি ক্লায়েন্টদের জন্য তৈরি করেছি।</p>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+
+      <!-- Project Card 1 -->
+      <div class="portfolio-card">
+        <!-- 🖼️ Image Size: 600x400px recommended -->
+        <img src="imgs/landing page.jpeg" alt="Project 1" class="project-img">
+        <div class="card-content">
+          <h3>Business Landing Page</h3>
+          <p class="tags">WordPress, Elementor</p>
+          <a href="#" class="btn-view" target="_blank">Live Preview</a>
+        </div>
+      </div>
+
+      <!-- Project Card 2 -->
+      <div class="portfolio-card">
+        <img src="imgs/personal portfolio.jpeg" alt="Project 2" class="project-img">
+        <div class="card-content">
+          <h3>Personal Portfolio</h3>
+          <p class="tags">HTML, CSS, JavaScript</p>
+          <a href="#" class="btn-view" target="_blank">Live Preview</a>
+        </div>
+      </div>
+
+      <!-- Project Card 3 -->
+      <div class="portfolio-card">
+        <img src="imgs/e-commercee home page.jpeg" alt="Project 3" class="project-img">
+        <div class="card-content">
+          <h3>E-Commerce Home Page</h3>
+          <p class="tags">WooCommerce, WordPress</p>
+          <a href="#" class="btn-view" target="_blank">Live Preview</a>
+        </div>
+      </div>
+
+      <!-- 🔄 চাইলে আরো প্রজেক্ট card copy-paste করে বাড়ানো যাবে -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Service Section শুরু -->
+<section id="service">
+  <div class="service-container">
+
+    <!-- Section Title -->
+    <h2 class="section-title">আমি যেসব সার্ভিস দেই</h2>
+    <p class="section-subtitle">ক্লায়েন্টদের প্রয়োজন অনুযায়ী নিচের সার্ভিসগুলো দিয়ে থাকি</p>
+
+    <!-- Service Grid -->
+    <div class="service-grid">
+
+      <!-- Service Box 1 -->
+      <div class="service-box">
+        <i class="fas fa-laptop-code service-icon"></i>
+        <h3>ওয়েব ডিজাইন</h3>
+        <p>রেসপন্সিভ ও মডার্ন ডিজাইন যা সব ডিভাইসে সুন্দর দেখায়</p>
+      </div>
+
+      <!-- Service Box 2 -->
+      <div class="service-box">
+        <i class="fas fa-code service-icon"></i>
+        <h3>ওয়েব ডেভেলপমেন্ট</h3>
+        <p>HTML, CSS, JavaScript, WordPress দিয়ে সম্পূর্ণ ফাংশনাল ওয়েবসাইট</p>
+      </div>
+
+      <!-- Service Box 3 -->
+      <div class="service-box">
+        <i class="fab fa-wordpress service-icon"></i>
+        <h3>WordPress কাস্টমাইজেশন</h3>
+        <p>Elementor সহ থিম কাস্টমাইজ ও সমস্যা সমাধান</p>
+      </div>
+
+      <!-- Service Box 4 -->
+      <div class="service-box">
+        <i class="fas fa-magic service-icon"></i>
+        <h3>AI সহ ওয়েব অটোমেশন</h3>
+        <p>ChatGPT এবং AI টুল ব্যবহার করে দ্রুত কাজ সম্পাদন</p>
+      </div>
+
+      <!-- চাইলে আরো সার্ভিস যুক্ত করা যাবে -->
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section শুরু -->
+<section id="contact">
+  <div class="contact-container">
+
+    <!-- Section Title -->
+    <h2 class="section-title">যোগাযোগ করুন</h2>
+    <p class="section-subtitle">নিচের ফর্ম ফিলাপ করুন অথবা সরাসরি যোগাযোগ করুন</p>
+
+    <div class="contact-content">
+
+      <!-- Left Side: Contact Info -->
+      <div class="contact-info">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>ঢাকা, বাংলাদেশ</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone-alt"></i>
+          <p>+880 1935136915</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <p>abuabdullahakash@gmail.com</p>
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="আপনার নাম" required>
+        <input type="email" placeholder="আপনার ইমেইল" required>
+        <input type="text" placeholder="বিষয়" required>
+        <textarea rows="5" placeholder="আপনার বার্তা..." required></textarea>
+        <button type="submit">পাঠিয়ে দিন</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section শুরু -->
+<footer id="footer">
+  <div class="footer-container">
+
+    <!-- 1️⃣ Logo/Name Section -->
+    <div class="footer-col">
+      <h2 class="footer-logo">Abu Abdullah Akash</h2>
+      <p>ওয়েব ডিজাইন ও ডেভেলপমেন্টে দক্ষতা, এক্সপার্ট সল্যুশন দিয়ে ক্লায়েন্টদের জন্য মানসম্মত প্রজেক্ট তৈরি করি।</p>
+    </div>
+
+    <!-- 2️⃣ Quick Links -->
+    <div class="footer-col">
+      <h3>দ্রুত লিঙ্ক</h3>
+      <ul>
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">আমার সম্পর্কে</a></li>
+        <li><a href="#skill">দক্ষতা</a></li>
+        <li><a href="#portfolio">পোর্টফোলিও</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </div>
+
+    <!-- 3️⃣ Contact Info -->
+    <div class="footer-col">
+      <h3>যোগাযোগ</h3>
+      <ul>
+        <li><i class="fas fa-map-marker-alt"></i> ঢাকা, বাংলাদেশ</li>
+        <li><i class="fas fa-envelope"></i> abuabdullahakash@gmail.com</li>
+        <li><i class="fas fa-phone-alt"></i> +880 1935136915</li>
+      </ul>
+    </div>
+
+    <!-- 4️⃣ Social Media -->
+    <div class="footer-col">
+      <h3>ফলো করুন</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1BFLKjJsso/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/in/abu-abdullah-akash-88b26b299?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/abuabdullahakash"><i class="fab fa-github"></i></a>
+        <!-- চাইলে আরও সোশ্যাল অ্যাড করা যাবে -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 🔽 Bottom Copyright -->
+  <div class="footer-bottom">
+    <p>© 2025 Abu Abdullah Akash. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Swiper Initialization
+  const swiper = new Swiper(".testimonial-swiper", {
+    loop: true,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<script>
+  // ডেমো সাবমিট ব্লক করার জন্য (চাইলে বাদ দিতে পারো)
+  document.querySelector(".contact-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    alert("ধন্যবাদ! আপনার মেসেজ পাঠানো হয়েছে।");
+  });
+</script>
+
+<!--responsive java code-->
+<script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('show');
+  }
+</script>
+
+<!--responsive java code-->
+<script>
+  // 🔄 Toggle menu on hamburger click
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('show');
+  }
+
+  // 🔄 Body click করলে যদি menu খোলা থাকে, তাহলে বন্ধ করে দেবে
+  document.addEventListener('click', function (e) {
+    const navMenu = document.querySelector('.nav-menu');
+    const hamburger = document.querySelector('.hamburger');
+
+    // যদি click menu বা hamburger-এর বাইরে হয়
+    if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+      navMenu.classList.remove('show');
+    }
+  });
+</script>
+
+
+</body>
+
+</html>
