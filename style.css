@@ -679,9 +679,7 @@ body {
 /* add korci humber thik korte */
 
 /* Default: hide hamburger on desktop */
-.hamburger {
-  display: none;
-}
+
 
 /* Mobile: show hamburger */
 @media (max-width: 768px) {
@@ -829,6 +827,46 @@ body {
 }
 
 /* By default hide hamburger icon on desktop */
+
+/* ✅ Mobile Responsive Fixes */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #F27905;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Hero image spacing */
+  .hero img, .hero-image img {
+    margin-top: 30px;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Hide hamburger by default on desktop */
 .hamburger {
   display: none;
 }
