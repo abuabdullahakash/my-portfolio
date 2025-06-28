@@ -810,3 +810,25 @@ body {
      ✅ Responsive Design End
      ======================== */
   
+
+
+/* 📱 Mobile Responsive Setup */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+/* By default hide hamburger icon on desktop */
+.hamburger {
+  display: none;
+}
